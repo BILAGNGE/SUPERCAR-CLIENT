@@ -1,0 +1,42 @@
+.content-block {
+    background-color: white;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .box-style {
+    background-color: #ff8800;
+    color: white;
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .button-style {
+    display: inline-block;
+    background-color: #ff8800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: #535353; /* Couleur de fond différente au survol */
+}
+
+
+.image-style {
+  width: 100%; /* L'image occupera 100% de la largeur disponible */
+  max-width: 500px; /* Définit une largeur maximale pour l'image */
+  border: none;
+  border-radius: 0px;
+  /* Autres styles CSS pour l'image */
+}
