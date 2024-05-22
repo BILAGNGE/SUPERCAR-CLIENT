@@ -1,0 +1,271 @@
+/* VOITURES : Les marques */
+
+.logo-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -50px;
+  }
+  
+  .logo-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .logo-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.75rem rgb(255, 255, 255);
+  }
+
+  .logo-img:hover img {
+    transform: translateY(-10px);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .logo-img img {
+  max-width: 100%;
+  max-height: 100%;
+  }
+  
+  .logo-title {
+  text-align: center;
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(19, 13, 45);
+  }
+
+
+
+
+
+/* Pour les écrans plus petits que 576px */
+@media (max-width: 576px) {
+  .logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo-item {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+/* Pour les écrans plus grands que 576px jusqu'à 992px */
+@media (min-width: 576px) and (max-width: 992px) {
+  .logo-item {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+/* Pour les écrans plus grands que 992px */
+@media (min-width: 992px) {
+  .logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo-item {
+    width: 30%;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+  /* Position des ancres */
+
+  #Audi {
+    scroll-margin-top: 160px;
+  }
+
+  #BMW {
+    scroll-margin-top: 160px;
+  }
+
+  #Bentley {
+    scroll-margin-top: 160px;
+  }
+
+  #Ferrari {
+    scroll-margin-top: 160px;
+  }
+
+  #Lamborghini {
+    scroll-margin-top: 160px;
+  }
+
+  #Mercedes-Benz {
+    scroll-margin-top: 160px;
+  }
+
+  #Porsche {
+    scroll-margin-top: 160px;
+  }
+
+  #Tesla {
+    scroll-margin-top: 160px;
+  }
+  
+
+
+
+  
+  /* Liste des voitures */
+
+/* --- Style pour la liste de marques des voitures proposées --- */
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.brand-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  width: calc(33% - 1rem);
+}
+
+.brand-card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.brand-card-img {
+  height: 8rem;
+  object-fit: contain;
+  object-position: center;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* --- Style pour les listes de voitures regroupées par marque --- */
+
+.car-list {
+  margin-top: 5rem;
+}
+
+.car-list h2 {
+  color: #f7be16;
+  font-size :2rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+}
+
+.car-list ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.car-list li {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.car-list li:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.car-img-container {
+  position: relative;
+  width: 17.5rem;
+}
+
+.car-img {
+  height: auto;
+  max-height: 16rem;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.car-info {
+  padding: 1.5rem;
+  text-align: center;
+  width: calc(100% - 17.5rem);
+}
+
+.car-name {
+  color: #f7be16;
+  font-size :1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.car-details {
+  color: #ffa500;
+  font-size :0.875rem;
+  margin-bottom: 1rem;
+}
+
+.car-stars {
+  display: flex;
+  justify-content: center;
+}
+
+.car-stars i {
+  color: #FFCC00;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.car-price {
+  color: #444;
+  font-size :1.125rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .brand-card {
+    width: calc(50% - 1rem);
+  }
+  
+  .car-info {
+    font-size :0.875rem;
+    padding: 1rem;
+    text-align: left;
+    width: calc(100% - 10rem);
+  }
+  
+  .car-img-container {
+    width: 10rem;
+  }
+}
